@@ -1,5 +1,7 @@
 # RSA-Encryption
-You can encrypt and descript a string with RSA algorithm
+Encrypt and  decrypt  a string with RSA algorithm
 ***********************
 
-You must initialized p & q value with prime numbers( in RSA.cs class)
+RSA is an algorithm used to encrypt and decrypt messages. You can know about this more in this link https://simple.wikipedia.org/wiki/RSA_algorithm
+
+You can initialize p & q value with two different large prime desirable numbers(in RSA.cs class).
