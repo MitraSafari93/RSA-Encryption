@@ -6,11 +6,17 @@ RSA is an algorithm used to encrypt and decrypt messages. You can know about thi
 
 You can initialize p & q value with two different large prime desirable numbers(in RSA.cs class).
 The public key is n & e, and the private key is d.
-n = p*q;
-Φ = (p - 1) * (q - 1) / GCD(p - 1, q - 1);
-e = The smallest number that GCD(phi, e) is equal to 1;
-d = (k * phi + 1) / e;
-k = The smallest number ,Provided that (k * phi + 1) is divisible by e.
+
+n = p*q
+
+Φ = (p - 1) * (q - 1) / GCD(p - 1, q - 1)
+
+e = The smallest number that GCD(phi, e) is equal to 1
+
+d = (k * phi + 1) / e
+
+k = The smallest number ,Provided that (k * phi + 1) is divisible by e
+
 
 
 
