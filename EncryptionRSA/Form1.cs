@@ -34,7 +34,7 @@ namespace EncryptionRSA
                 byte[] encoded = ASCIIEncoding.ASCII.GetBytes(textBox1.Text);
                 BigInteger bigInt = new BigInteger(encoded);
                 if (bigInt > rsa.n)
-                    throw new Exception("Text is too larg!");
+                    MessageBox.Show("Text is too larg!");
                 EncryptNum = rsa.Encryption(bigInt);
                 textBox2.Text += ("Encrypted : " + EncryptNum);
                 textBox1.Clear();
@@ -43,9 +43,9 @@ namespace EncryptionRSA
             {
 
                 DecryptNum = rsa.Decryption(EncryptNum);
-                textBox1.Text = "Decrypted: " + DecryptNum;
+                textBox1.Text = "Decrypted:"+ Environment.NewLine + "   ASCII Code:" + DecryptNum;
                 string decoded = ASCIIEncoding.ASCII.GetString(DecryptNum.ToByteArray());
-                textBox1.Text += ("  \n  Orginal text="+ decoded);
+                textBox1.Text += (Environment.NewLine+"   Orginal text=" + decoded);
                 textBox2.Clear();
             }
         }
