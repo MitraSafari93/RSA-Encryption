@@ -17,7 +17,7 @@ d = (k * phi + 1) / e
 
 k = The smallest number ,Provided that (k * phi + 1) is divisible by e
 
-*****
+## How to use?
 There are 2 textbox in the program, you can entire a message in upper textbox and when you click the button you can see the encrypted message,
 and when you click for the second time, you can see the ASCII code and your primitive message will returned and decrypted.
 
